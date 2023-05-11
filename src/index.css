@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.contenedor{
+  @apply max-w-7xl mx-auto w-5/6 lg:w-11/12
+}
+
+
+.grilla{
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(350px , 1fr));
+  gap: 2rem;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.pagination button {
+  width: 40px;
+  height: 40px;
+  font-family: inherit;
+  font-weight: 600;
+  margin: 0 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid;
+}
+
+.pagination button.active {
+  background: #055ce4;
+  color: white;
+  border: 1px solid transparent;
+}
